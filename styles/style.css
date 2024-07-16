@@ -4,7 +4,7 @@
 .header {
   width: 1052px;
   display: grid;
-  margin-top: 92px;
+  margin-top: 95px;
   grid-template-columns: 1fr 200px 1fr;
  }
 .header__menu {
@@ -15,10 +15,10 @@
   
 .header__links-list {
   width: 391px;
-  height: 22px;
   display: flex;
   justify-content: right;
-  column-gap: 15px;
+  margin-left: 50px;
+  column-gap: 17px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
@@ -32,14 +32,14 @@
   list-style: none;
  }
   
-.header__link_active {
+.header__link {
   text-decoration: underline;
 }
   
 .header__logo {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
+  margin-left: 30px;
   }
   
 .header__logo-image {
@@ -49,16 +49,19 @@
   
 .address {
   all: unset;
-  justify-self: center;
-  margin-left: 150px;
-  line-height: 1.5;
+  width: 240px;
+  line-height: 24px;
+  text-align: left;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 18px;
-  
+}
+
+.header__address {
+  margin-left: 170px;
+  padding-top: 5px;
 }
 
 /* Секция "оно тебе надо" */
-
 
 .overlay {
   position: absolute;
@@ -69,7 +72,7 @@
 
 .cover {
   padding: 165px 50px 50px;
-  margin-top: 96px;
+  margin-top: 95px;
   margin-bottom: 100px;
   display: flex;
   position: relative;
@@ -127,6 +130,7 @@ letter-spacing: .6em;
 
 .bet-button {
   padding: 12px 32px;
+  cursor: pointer;
   color:white;
   font-family: inherit;
   font-size: 22px;
@@ -165,13 +169,17 @@ letter-spacing: .6em;
 }
 
 .card {
-  height: 563px;
+  min-height: 563px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
   position: relative;
   padding: 51px 40px 48px;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .card__title {
@@ -217,7 +225,6 @@ letter-spacing: .6em;
 
 .about {
   width: 1052px;
-  height: 595px;
   margin-top: 146px;
 }
 
@@ -269,25 +276,14 @@ letter-spacing: .6em;
 
 .footer {
   width: 1000px;
-  height: 98px;
   display: flex;
   justify-content: space-between;
-  margin: 180px 50px 88px;
-}
-
-.footer__address {
-  all: unset;
-  justify-self: center;
-  line-height: 1.5;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  
+  margin: 183px 50px 88px;
 }
 
 .footer__menu {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 18px;
-  margin-left: 70px;
 }
 
 .footer__menu-list {
